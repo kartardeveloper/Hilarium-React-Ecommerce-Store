@@ -34,16 +34,20 @@ export default function Checkout() {
     error,
     sendRequest,
     clearData,
-  } = useFetch("http://localhost:3000/order", requestConfig, "");
+  } = useFetch(
+    "https://hilarium-react-ecommerce-store.onrender.com/order",
+    requestConfig,
+    ""
+  );
 
   const { sendRequest: sendAddress } = useFetch(
-    "http://localhost:3000/address",
+    "https://hilarium-react-ecommerce-store.onrender.com/address",
     requestConfig,
     ""
   );
 
   const { data: address } = useFetch(
-    "http://localhost:3000/user-address",
+    "https://hilarium-react-ecommerce-store.onrender.com/user-address",
     getRequestConfig,
     {}
   );

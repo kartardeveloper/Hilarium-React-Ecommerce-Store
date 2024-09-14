@@ -13,7 +13,7 @@ const WishlistContext = createContext({
 
 export function WishlistContextProvider({ children }) {
   const { data: wishlist } = useFetch(
-    "http://localhost:3000/wishlist",
+    "https://hilarium-react-ecommerce-store.onrender.com/wishlist",
     requestConfig,
     []
   );

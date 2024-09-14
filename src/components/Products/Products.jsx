@@ -8,7 +8,7 @@ export default function Products() {
     data: products,
     isFetching,
     error,
-  } = useFetch("http://localhost:3000/products", requestConfig, []);
+  } = useFetch("https://hilarium-react-ecommerce-store.onrender.com/products", requestConfig, []);
 
   if (isFetching) {
     return <p className="text-center loading-text">Loading Products...</p>;

@@ -22,7 +22,7 @@ export default function ProductItem({ product, truncateDescription }) {
   const wishlistContext = useContext(WishlistContext);
 
   const { data, isFetching, error, sendRequest } = useFetch(
-    `http://localhost:3000/wishlist`,
+    `https://hilarium-react-ecommerce-store.onrender.com/wishlist`,
     requestConfig,
     ""
   );
